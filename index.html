@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Chiffrement de Cesar</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="CesarCrypt3.js" ></script>
+    </head>
+    <body>
+        <h1>Chiffrement de César</h1> 
+       <HR>
+       
+            <center>
+                <form>
+                    <table>
+                        <tr>
+                            <td>
+                                <P ALIGN="JUSTIFY"> Ce petit programme javascript vous permettra <br> de chiffrer/déchiffrer un message non accentué <br> prétraitez le texte avec le chiffre de César.<br> Écrivez votre texte puis choisissez le décalage.</P>
+                                
+                            </td>    
+                            <td>
+                                <p>Texte en clair:</p>
+                                <textarea id="TextClair" cols="50" rows="10"></textarea><br>
+                                Clé : <input id="key" type="text" value="3">
+                                <button type="button" id="boutonCrypter">Crypter</button>
+                                <button type="button" id="boutonDecrypter">Decryter</button>
+                                <input type="reset" value="Réinitialiser" name="boutonReset"><br>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </center>
+        <center>
+            <p>Texte chiffré:</p>
+            <div id="TextChiffre"></div>
+        </center>
+    </body>
+</html>
